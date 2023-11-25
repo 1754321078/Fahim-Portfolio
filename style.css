@@ -64,8 +64,8 @@ animation-delay: calc(.2s * var(--i));
     }
 
     .navbar a {
-        font-size: 18px;
-        margin-left: 20px;
+        font-size: 15px;
+        margin-left: 15px;
     }
 }
 .home{
