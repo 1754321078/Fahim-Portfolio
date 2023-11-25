@@ -58,6 +58,16 @@ animation-delay: calc(.2s * var(--i));
     color: #0ef;
 
 }
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+}
 .home{
   position: relative;
   width: 100%;
@@ -154,6 +164,23 @@ box-shadow:0 0 5px #0ef,
     0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan, 0 0 200px cyan
 
 }
+@media screen and (max-width: 768px) {
+    .home {
+        padding: 50px 5% 0;
+    }
+
+    .home-content h3,
+    .home-content h3:nth-of-type(2),
+    .home-content h1,
+    .home p,
+    .home-sc1 a,
+    .btn-box {
+        margin-left: 0;
+    }
+}
+.home-content h1{
+    font-size: 40px;
+}
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -172,13 +199,13 @@ box-shadow:0 0 5px #0ef,
 }
 
 .about-text h2{
-    font-size: 60px;
+    font-size: 30px;
 }
 .about-text h2 span{
     color: #0ef;
 }
 .about-text h4{
-    font-size: 29px;
+    font-size: 20px;
     font-weight: 600;
     color: white;
     line-height: 1.7;
@@ -187,9 +214,66 @@ box-shadow:0 0 5px #0ef,
 }
 .about-text p{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.4;
     margin-bottom:4rem;
+}
+@media only screen and (max-width: 1080px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    /* Add more responsive adjustments as needed for other sections */
+    
+    .home {
+        padding: 50px 5% 0;
+    }
+
+    .home-content h3,
+    .home-content h3:nth-of-type(2),
+    .home-content h1,
+    .home p,
+    .home-sc1 a,
+    .btn-box {
+        margin-left: 0;
+    }
+
+    /* Add responsive adjustments for the .about section */
+    .about {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .img {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text {
+        padding: 15px;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .about-text h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+
+    /* Add more responsive adjustments as needed for other sections */
 }
 #services{
     color: white;
@@ -260,6 +344,49 @@ animation-delay:.2s;
 box-shadow:0 0 5px #0ef,
 0 0 25px #0ef
 }
+@media only screen and (max-width: 1080px) {
+    #services {
+        font-size: 18px;
+        margin-bottom: 3rem;
+    }
+
+    .sub-title {
+        font-size: 40px; 
+        padding-bottom: 50px; 
+    }
+
+    .container {
+        padding: 30px; /* Adjusted padding for smaller screens */
+    }
+
+    .services-list div {
+        padding: 15px; /* Adjusted padding for smaller screens */
+        font-size: 12px; /* Adjusted font size for smaller screens */
+        border-radius: 15px; /* Adjusted border-radius for smaller screens */
+    }
+
+    .services-list div i {
+        font-size: 30px; /* Adjusted font size for smaller screens */
+        margin-bottom: 15px; /* Adjusted margin for smaller screens */
+    }
+
+    .services-list div h2 {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+        margin-bottom: 8px; /* Adjusted margin for smaller screens */
+    }
+
+    .services-list div a {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+        margin-top: 8px; /* Adjusted margin for smaller screens */
+    }
+
+    .read {
+        padding: 8px 16px; /* Adjusted padding for smaller screens */
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+
+    /* Add more specific adjustments as needed for other sections */
+}
 
 #see-more-button {
     display: flex;
@@ -326,7 +453,32 @@ animation-delay:.2s;
 }
 
 
+@media only screen and (max-width: 1080px) {
+    #see-more-button {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
+    .gallery-nav button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .read {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .services-list div {
+        padding: 20px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    .services-list div:hover {
+        transform: none;
+    }
+}
 section1{
     display: flex;
     flex-wrap: wrap;
@@ -558,6 +710,47 @@ section1{
     opacity: 0;
     width: 100%;
 }
+@media only screen and (max-width: 768px) {
+    .container-prime {
+        width: 100%;
+        height: auto;
+        padding: 50px 20px;
+        margin-left: 0;
+    }
+
+    .bar {
+        font-size: 18px;
+    }
+
+    .Technical-bars .bar {
+        margin-top: 20px;
+    }
+
+    .Technical-bars .bar .progress-line {
+        height: 3px;
+    }
+
+    .progress-line span::after,
+    .progress-line span::before {
+        top: -18px;
+        right: -10px;
+    }
+
+    .radial-bars .radial-bar {
+        margin-bottom: 10px;
+    }
+
+    .radial-bars .radial-bar svg {
+        width: 60px;
+        height: 80px;
+    }
+
+    .radial-bar .percentage,
+    .radial-bar .text {
+        font-size: 12px;
+    }
+
+}
 
 .gallery-container {
   background:transparent;
@@ -615,6 +808,42 @@ section1{
     background-color: blueviolet;
     color: #fff;
   }
+  @media (max-width: 768px) {
+    .gallery-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-content img,
+    .gallery-content video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query for screens 600px and below */
+@media (max-width: 600px) {
+    .gallery-nav button {
+        width: 40%;
+        box-sizing: border-box;
+        margin: 3px;
+    }
+
+    .gallery-content {
+        padding: 0 10px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-content img,
+    .gallery-content video {
+        width: 50%;
+        height: auto;
+    }
+}
 @keyframes slideRight{
     0%{
         transform: translate(-100px);
@@ -778,4 +1007,95 @@ box-shadow:0 0 5px #0ef,
     text-align:center;
     flex-wrap: wrap;
   }
-  
+  @media (max-width: 1080px) {
+    .contact {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: 40px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+    }
+
+    .contact-text p {
+        font-size: 20px;
+    }
+
+    .contact-list li i {
+        font-size: 16px;
+    }
+
+    .contact-lcons li {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin: 15px 10px 15px 0;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form form.submit {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
+.copyright p{
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+    }
+}
+  @media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .home {
+        padding: 50px 5% 0;
+    }
+
+    .home-content h3,
+    .home-content h3:nth-of-type(2),
+    .home-content h1,
+    .home p,
+    .home-sc1 a,
+    .btn-box,
+    .read,
+    #see-more-button {
+        margin-left: 0;
+    }
+
+    .gallery-item,
+    .gallery-content img,
+    .gallery-content video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles for screens with a minimum width of 769px (large screens) */
+@media screen and (min-width: 769px) {
+    .navbar a {
+        font-size: 25px;
+        margin-left: 35px;
+    }
+
+    .home {
+        padding: 70px 10% 0;
+    }
+
+    /* Add any specific styles for larger screens here */
+}
